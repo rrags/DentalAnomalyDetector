@@ -1,0 +1,6 @@
+#!/bin/sh
+#$ -pe smp 16
+#$ -q MANSCI-GPU
+#$ -l ngpus=4
+#$ -l gpu.cuda.0.mem_free=3G
+python -W ignore /Users/rragodos/umesh/main.py
